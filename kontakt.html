@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+ </head>
+    <body>
+<div id="ikonice">
+     <i class="fab fa-facebook-square"></i>
+    <i class="fab fa-instagram"></i>
+</div>
+<div id="logo">
+<img src="1.png" alt="logo" width="250px" height="240px"></div>
+<div class="locationn"></div>
+<div id="wrapper">
+    <div id="header">
+     <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Početna</a>
+    <a href="nama.html">O Nama</a>
+    <a href="galerija.html">Galerija</a>
+    <a href="#">Kontakt</a>
+  </div>
+</div>
+
+
+<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.display = "none";
+}
+</script>        
+ </div><!--end header-->
+         <div id="kontaktirajte">  
+   <div id="main">
+      <div id="kontakti">
+        <h2>Kontakt</h2></div><!--end kontakt -->
+       <div id="kontaktTekst">
+        <p>Imate pitanja, želite da saznate više o našim salonima i uslugama? Slobodno nas kontaktirajte putem e-mejla, fejsbuka ili direktnim pozivom na telefonske brojeve salona.</p>
+           <div id="net">
+               <p><b>kontaktirajte nas</b></p>
+      <ul>
+        <li>broj salona1:(+381) 64/09-03-371</li>
+        <li>broj salona2:(+381) 61/61-85-899</li>
+     </ul>
+<p><b>zapratite nas</b></p>
+    <ul>
+    <li>Facebook: Frizerski studio
+        Zarin</li>
+        <li>Instagram: frizerski_studio_zarin </li> 
+    </ul>   
+</div>
+           
+       </div>
+       
+ <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+             <label for="email">email</label>
+            <input type="text" id="email" name="email" placeholder="jelena@example.com">
+  </form> 
+       <form>
+           
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+              <input type="submit" value="Submit">
+   
+           </form>
+    </div><!--end main-->
+    <div id="sidebar">
+<div id="lokacija">
+    <h2>Lokacija</h2>         
+</div><!--end lokacija -->
+
+       <div id="mapa">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.0979774086177!2d19.832151915550163!3d45.24581147909902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b103e182b3c4b%3A0xcb4714ae09a55cf!2sFrizerski+studio+Zarin!5e0!3m2!1ssr!2srs!4v1530208807194" width="400" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+       </div>  
+            </div><!--end sidebar-->
+    </div><!--kontaktirajte-->
+<div id="footer">
+  <div id="kontakt">
+    <ul>
+        <li>Frizerski studio Zarin </li>
+        <li>Tolstojeva 4, Novi Sad, srbija</li>
+        <li>www.frizerskistudiozarin.com</li>   
+    </ul>   
+</div>
+<div id="hi">
+   <ul>
+     <li>email:fstudiozarin@.com</li> 
+     <li>broj salona1:(+381) 64/09-03-371</li>
+     <li>broj salona2:(+381) 61/61-85-899</li>
+  </ul>
+ </div>
+</div><!--end footer-->      
+</div><!--end wrapper-->
+</body>
+</html>            

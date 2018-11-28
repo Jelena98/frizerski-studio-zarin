@@ -1,0 +1,441 @@
+* {
+   font-family: 'Markazi Text', serif; 
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Markazi Text', serif;
+    font-size: 20px;  
+}
+ /* slika korišcena za pozadinu */
+.front {
+/* slika korišcena za pozadinu */
+    background-image: url("slike/pocetna.JPG");
+
+    /* puna visina sl. */
+    height: 100%; 
+
+    /* namestiti sl. */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.mima {
+    /* sl. koriscena za pozadine */
+    background-image: url("ons.jpg");
+
+    /* puna visina */
+    height: 50%; 
+
+    /* namestiti sl.*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bd {
+    /* sl. koriscena za pozadine */
+    background-image: url("slike/galerija.JPG");
+
+    /* puna visina */
+    height: 50%; 
+
+    /* namestiti sl.*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.locationn {
+    /* sl. koriscena za pozadine */
+    background-image: url("slike/locationn.JPG");
+
+    /* puna visina */
+    height: 50%; 
+
+    /* namestiti sl.*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#cao{
+   margin: 300px auto;
+    color: #FFF;
+    font-size: 35px; 
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    
+}
+.photo {
+    position: relative;
+    width: 300px;
+    float: left;
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 300px;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+#galerija{
+    width: 1200px;
+    margin: 0 auto;
+}
+.photo:hover .image {
+  opacity: 0.3;
+}
+
+.photo:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+#kontaktirajte{
+    margin: 0 auto;
+   width: 1000px;
+}
+#main{
+    width: 500px;
+     float: left;   
+}
+
+#sidebar{
+    500px;
+   float: right;
+   
+    
+}
+
+/*kontakt*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+    
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+    
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;  
+}
+
+#email input[type=submit] {
+        width: 300px;
+        margin-top: 0;
+    }
+/*end kontakt*/
+#nama{
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+#salon{
+   margin: 0 auto;
+}
+
+#logo{
+    position: absolute;
+    bottom: 79%;
+    left: -85px;  
+}
+
+#ikone{
+    position: absolute;
+    bottom: 1%;
+    left: 90%;
+    font-size: 50px;
+    color: #FFF;
+
+}
+#ikonice{
+    position: absolute;
+    bottom: 50%;
+    left: 90%;
+    font-size: 50px;
+    color: #FFF;  
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 40%;
+  max-width: 2560px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.mySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+img {
+  margin-bottom: -4px;
+}
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+img.hover-shadow {
+  transition: 0.3s;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* lightbox end */
+/* Ovo je komentar u jednom retku */
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px; 
+}
+span{
+    position: absolute;
+    right: 2%;
+    top: 0%;
+    color: #FFF;
+
+}   
+#footer{
+   background: #474747;
+    width: 100%;
+   overflow: hidden;
+   clear: both;
+    margin-top: 30px;
+}
+#kontakt{ 
+   float: left;
+   padding-top: 10px;
+    padding-left: 90px;    
+}
+#kontakt ul{ 
+   margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #FFF;
+}
+
+#hi{
+ background: #000;
+}
+
+#hi ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+#hi ul li {
+ float: left;
+    padding-top: 30px;
+    padding-left: 80px;
+   color: #FFF;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
